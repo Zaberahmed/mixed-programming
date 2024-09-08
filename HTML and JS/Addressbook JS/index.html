@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Address Book</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Address Book</h1>
+    <div id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search..." />
+    </div>
+    <div id="addContactForm">
+      <h2>Add Contacts</h2>
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" />
+      <label for="surnameInput">Surname:</label>
+      <input type="text" id="surnameInput" />
+      <label for="phoneInput">Phone:</label>
+      <input type="text" id="phoneInput" />
+      <label for="addressInput">Address:</label>
+      <input type="text" id="addressInput" />
+      <button id="addButton">Add Contact</button>
+      <button id="clearall">Clear</button>
+      <button id="showall">Show Contacts</button>
+    </div>
+    <div id="contactsTableContainer">
+      <table id="contactsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
